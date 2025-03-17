@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 100;
+  background-image: url("src/assets/bg.png");
+  background-color: black;
+  height: 100%;
+  background-repeat: no-repeat, repeat;
+  background-size: cover, auto;
+  color: white;
+  padding: 20px;
+}
+
+
+.user-navbar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.navbar {
+  flex-shrink: 0;
+}
+
+.sidebar {
+  flex-shrink: 0;
+  height: 100%;
+}
+
+.content {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar ul li a.active {
+  font-weight: bold;
+}
+
+.my-masonry-grid {
+  display: flex;
+  margin-left: -15px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 15px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url("src/assets/mobile.png");
+  }
+}
