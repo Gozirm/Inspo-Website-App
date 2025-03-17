@@ -1,7 +1,7 @@
 import React from "react";
 import dots from "../../assets/dots.svg";
 import completedIcon from "../../assets/completedIcon.svg";
-import SavedIcon from "../../assets/SavedIcon.svg";
+import SavedIcon from "../../assets/savedIcon.svg";
 import arrow from "../../assets/Icon.svg";
 import { useState } from "react";
 import archives from "../../dummyApis/Archives";
