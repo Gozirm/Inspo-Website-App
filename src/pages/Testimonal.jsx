@@ -14,21 +14,27 @@ const staggerVariants = {
 };
 
 const testimonials = [
-  { text: "This service is amazing! Highly recommend to everyone.", name: "John Doe" },
+  {
+    text: "This service is amazing! Highly recommend to everyone.",
+    name: "John Doe",
+  },
   { text: "A wonderful experience from start to finish.", name: "Jane Smith" },
-  { text: "Exceptional quality and fantastic customer support.", name: "Michael Brown" },
+  {
+    text: "Exceptional quality and fantastic customer support.",
+    name: "Michael Brown",
+  },
 ];
 
 const Testimonal = () => {
   return (
-    <motion.main 
+    <motion.main
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
       variants={staggerVariants}
-      className="mt-15 container mx-auto"
+      className="mt-15 container mx-auto px-5 md:px-0"
     >
-      <motion.div 
+      <motion.div
         variants={fadeUpVariants}
         className="flex items-center gap-5 mb-5 justify-center md:justify-start"
       >
@@ -36,7 +42,7 @@ const Testimonal = () => {
         <img src={arrow} alt="arrow" className="w-8 md:w-10" />
       </motion.div>
 
-      <motion.div 
+      <motion.div
         variants={staggerVariants}
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
       >

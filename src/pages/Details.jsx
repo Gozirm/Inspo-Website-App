@@ -40,14 +40,14 @@ const Details = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={controls}
       transition={{ duration: 1, ease: "easeOut" }}
-      className="my-10 container mx-auto"
+      className="my-10 container mx-auto px-4"
     >
-      <div className="flex flex-col lg:flex-row justify-between items-center py-10">
+      <div className="flex flex-col lg:flex-row justify-between items-center py-10 space-y-6 lg:space-y-0 lg:space-x-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={controls}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-center md:text-left mb-6 lg:mb-0 lg:pr-4"
+          className="text-center lg:text-left"
         >
           <p className="text-4xl lg:text-7xl text-gray-300">{formatNumber(users)}</p>
           <p className="text-lg lg:text-xl text-gray-300">Users</p>
@@ -59,7 +59,7 @@ const Details = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={controls}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center md:text-left mb-6 lg:mb-0 lg:pr-4"
+          className="text-center lg:text-left"
         >
           <p className="text-4xl lg:text-7xl text-gray-300">{formatNumber(ideas)}</p>
           <p className="text-lg lg:text-xl text-gray-300">Ideas Generated</p>
@@ -71,7 +71,7 @@ const Details = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={controls}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="text-center md:text-left mb-6 lg:mb-0 lg:pr-4"
+          className="text-center lg:text-left"
         >
           <p className="text-4xl lg:text-7xl text-gray-300">{formatNumber(reviews)}</p>
           <p className="text-lg lg:text-xl text-gray-300">Reviews</p>
@@ -83,7 +83,7 @@ const Details = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={controls}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-center md:text-left"
+          className="text-center lg:text-left"
         >
           <p className="text-4xl lg:text-7xl text-gray-300">{formatNumber(clients)}</p>
           <p className="text-lg lg:text-xl text-gray-300">Happy Clients</p>
