@@ -9,13 +9,16 @@ import reportsIconActive from "../assets/reportIconWhite.svg";
 import settingsIcon from "../assets/settingsIconBlack.svg";
 import settingsIconActive from "../assets/settingsIconWhite.svg";
 import logoutIcon from "../assets/logoutIcon.svg";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 
 const Sidebar = () => {
   return (
     <div className="w-50 h-full fixed flex flex-col justify-between">
       <div>
+        <Link to="/">
+        
         <img alt="Logo" className="h-10" src={logo} />
+        </Link>
         <nav className="space-y-5 mt-13">
           <NavLink
             className={({ isActive }) =>

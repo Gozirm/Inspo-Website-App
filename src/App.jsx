@@ -6,6 +6,10 @@ import ScrollToTop from "./Hooks/ScrollToTop";
 import React, { lazy } from "react";
 import Error from "./Components/Error";
 import { Toaster } from "sonner";
+import Tag from "./Auth/Tag";
+import SignOut from "./Auth/SignOut";
+import SignIn from "./Auth/SignIn";
+import ForgotPassword from "./Auth/ForgotPassword";
 
 const Dashboard = lazy(() => import("./Components/UserPages/Dashboard"));
 const Profile = lazy(() => import("./Components/UserPages/Profile"));
@@ -27,6 +31,11 @@ function App() {
               <Route path="/dashboard/profile" element={<Profile />} />
               <Route path="/dashboard/settings" element={<Settings />} />
             </Route>
+            <Route path="tags" element={<Tag/>} />
+            <Route path="/signup" element={<SignOut/>} />
+            <Route path="/signin" element={<SignIn/>} />
+            <Route path="forgotpassword" element={<ForgotPassword/>}/>
+            
             <Route path="*" element={<Error />} />
           </Routes>
         </ScrollToTop>
